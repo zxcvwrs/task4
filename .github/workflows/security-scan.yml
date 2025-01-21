@@ -19,7 +19,7 @@ jobs:
           docker build -t myapp:latest .
 
       - name: Run Trivy scan
-        uses: aquasec/trivy:latest
+        uses: aquasecurity/trivy:latest
         with:
           image-ref: 'myapp:latest'
           vuln-type: 'os,library'
